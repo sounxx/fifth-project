@@ -1,0 +1,100 @@
+@charset "utf-9";
+* {
+    font-size: 10px;
+    text-align: center;
+    line-height: 50px;
+}
+.box {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #245038;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+body {
+    width: 500px;
+}
+
+
+.first {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+}
+.r-box {
+    display: flex;
+}
+
+
+.second  {
+    display: flex;
+    margin: 50px 0;
+    flex-direction: column;
+}
+.second div:first-child {
+    align-self: flex-start;
+}
+.second div:nth-child(2) {
+    align-self: center;
+}
+.second div:last-child {
+    align-self: flex-end;
+}
+
+
+.third {
+    position: relative;
+    margin: 50px 0;
+    height: 150px;
+}
+.third .bot {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 100px;
+}
+.third .top {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.fourth {
+    position: relative;
+    margin: 50px 0;
+}
+.p02 {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+
+
+.fifth {
+    position: relative;
+    margin: 90px 0;
+}
+.fifth .f01 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    height: 200px;
+    background-color: #245038;
+}
+.fifth div > .box:first-child {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.fifth .box:last-child {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
